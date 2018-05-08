@@ -5,6 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+#The authorization Gem for Ruby on Rails.
+gem 'cancancan', '~> 2.0'
+#RailsAdmin is a Rails engine that provides an easy-to-use interface for managing your data
+gem 'rails_admin', '~> 1.3'
 #database postgres
 gem 'pg'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
