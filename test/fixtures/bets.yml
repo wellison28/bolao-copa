@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  goals_home: 1
+  goals_guest: 1
+  user: one
+  match: one
+
+two:
+  goals_home: 1
+  goals_guest: 1
+  user: two
+  match: two
