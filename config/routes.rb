@@ -5,8 +5,10 @@ Rails.application.routes.draw do
   devise_scope :user do
     get '/entrar', to: 'devise/sessions#new'
     get '/cadastrar', to: 'devise/registrations#new'
+
     root to: 'home#index'
   end
 
+  resources :round
 
 end

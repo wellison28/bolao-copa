@@ -1,3 +1,4 @@
 <h2>Hello <%= current_user.email %></h2>
 
+<%= link_to('gravar', gravar_path) %>
 <%= link_to('Logout', destroy_user_session_path, method: :delete) %>

@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+r = Round.create(number: 5)
+Match.create(home: "São Paulo", guest: "Palmeiras", date: "28/10/1992", round: r)
+Match.create(home: "Corintians", guest: "Santos", date: "28/10/1992", round: r)
+Match.create(home: "Vasco", guest: "Fluminense", date: "28/10/1992", round: r)
