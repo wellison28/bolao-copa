@@ -1,3 +1,28 @@
 // Place all the styles related to the bet controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+form{
+  max-width: 375px;
+  display: flex;
+  flex-direction: row;
+  margin: 25px auto;
+}
+
+input[type="number"]{
+  height: 25px;
+  width: 25px;
+}
+
+input[type="submit"]{
+  width: 55px;
+}
+
+.col1, .col3{width: 30%; font-size: 1rem;}
+.col2 {margin: 0 10px;}
+.col1 {text-align: right;}

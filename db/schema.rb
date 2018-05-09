@@ -10,39 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180508044855) do
+ActiveRecord::Schema.define(version: 20180509025807) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "bets", force: :cascade do |t|
-    t.integer "goals_home"
-    t.integer "goals_guest"
+    t.integer "goal_home"
+    t.integer "goal_guest"
     t.bigint "user_id"
-    t.bigint "match_id"
+    t.bigint "game_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["match_id"], name: "index_bets_on_match_id"
+    t.index ["game_id"], name: "index_bets_on_game_id"
     t.index ["user_id"], name: "index_bets_on_user_id"
   end
 
-  create_table "matches", force: :cascade do |t|
+  create_table "games", force: :cascade do |t|
     t.string "home"
     t.string "guest"
+    t.integer "goal_home"
+    t.integer "goal_guest"
     t.date "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "round_id"
+    t.integer "round"
   end
 
   create_table "roles", force: :cascade do |t|
     t.boolean "admin"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "rounds", force: :cascade do |t|
-    t.integer "number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -62,12 +58,10 @@ ActiveRecord::Schema.define(version: 20180508044855) do
     t.datetime "last_sign_in_at"
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
-    t.integer "role_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "bets", "matches"
+  add_foreign_key "bets", "games"
   add_foreign_key "bets", "users"
-  add_foreign_key "round", "matches"
 end

@@ -1,10 +1,10 @@
 class CreateBets < ActiveRecord::Migration[5.1]
   def change
     create_table :bets do |t|
-      t.integer :goals_home
-      t.integer :goals_guest
+      t.integer :goal_home
+      t.integer :goal_guest
       t.references :user, foreign_key: true
-      t.references :match, foreign_key: true
+      t.references :game, foreign_key: true
 
       t.timestamps
     end

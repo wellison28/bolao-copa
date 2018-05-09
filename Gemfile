@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'jquery-rails'
 #The authorization Gem for Ruby on Rails.
 gem 'cancancan', '~> 2.0'
 #RailsAdmin is a Rails engine that provides an easy-to-use interface for managing your data

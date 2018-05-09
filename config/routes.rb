@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   devise_scope :user do
     get '/entrar', to: 'devise/sessions#new'
     get '/cadastrar', to: 'devise/registrations#new'
-
+    get '/jogos', to: 'bet#index'
+    get '/palpitar', to: 'bet#new'
+    post '/palpitar', to: 'bet#create'
     root to: 'home#index'
   end
 

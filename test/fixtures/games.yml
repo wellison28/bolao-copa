@@ -1,13 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  home: MyString
+  guest: MyString
   goal_home: 1
   goal_guest: 1
-  user: one
-  game: one
+  date: 2018-05-08
 
 two:
+  home: MyString
+  guest: MyString
   goal_home: 1
   goal_guest: 1
-  user: two
-  game: two
+  date: 2018-05-08

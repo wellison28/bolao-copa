@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  belongs_to :role
+  #belongs_to :role
   has_many :bets
 
   # Include default devise modules. Others available are:
