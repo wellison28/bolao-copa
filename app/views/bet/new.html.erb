@@ -1,24 +1,29 @@
-<h2>Palpite</h2>
 
-<div class="container-forms">
-  <% @games.each_with_index do |game_bet, index| %>
-    <%= form_for game_bet, url: {action: 'create'}, :html => {:class => "form-#{index}"}, remote: true do |f| %>
+<main>
+  <h2>Rodada 5</h2>
+  <div class="container-forms">
+    <% @games.each_with_index do |game_bet, index| %>
+      <%= form_for game_bet, url: {action: 'create'}, :html => {:class => "form-#{index}"}, remote: true do |f| %>
+        <div class="line">
+          <div class="col1">
+            <%= game_bet.game.home %>
+          </div>
+          <div class="col2">
+            <%= f.number_field :goal_home %>
+            <span>X</span>
+            <%= f.number_field :goal_guest %>
+          </div>
+          <div class="col3">
+            <%= game_bet.game.guest %>
+          </div>
+          <div class="btn-submit">
+            <%= f.submit 'Enviar' %>
+          </div>
+        </div>
 
-      <div class="col1">
-        <%= game_bet.game.home %>
-      </div>
-      <div class="col2">
-        <%= f.number_field :goal_home %>
-        <span>X</span>
-        <%= f.number_field :goal_guest %>
-      </div>
-      <div class="col3">
-        <%= game_bet.game.guest %>
-      </div>
-
-      <%= f.hidden_field :user_id, :value => current_user.id %>
-      <%= f.hidden_field :game_id, :value => game_bet.game.id %>
-      <%= f.submit 'Enviar' %>
+        <%= f.hidden_field :user_id, :value => current_user.id %>
+        <%= f.hidden_field :game_id, :value => game_bet.game.id %>
+      <% end %>
     <% end %>
-  <% end %>
-</div>
+  </div>
+</main>
