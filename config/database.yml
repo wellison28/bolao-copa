@@ -15,4 +15,6 @@ test:
   database: bet_test
 
 production:
+  <<: *default
+  database: bet_production
   url: <%= ENV['DATABASE_URL'] %>
