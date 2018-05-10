@@ -2,14 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 body.bet{
-  *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans';
-  }
-
   form{
     max-width: 375px;
     display: flex;
@@ -17,11 +10,6 @@ body.bet{
     margin: 10px auto;
     border-radius: 5px;
     padding: 10px 5px;
-  }
-
-  main{
-    width: 95%;
-    margin: 20px auto;
   }
 
   input[type="number"]{
@@ -49,7 +37,7 @@ body.bet{
 
   .btn-submit { height: 100%; margin-left: 10px;}
 
-  .col1, .col2, .col3{ width: 30%; font-size: 1rem;}
+  .col1, .col2, .col3{ width: 30%; font-size: 0.8rem;}
   .col1 { text-align: right; }
   .col3 {text-align: left; }
   .col2 {text-align: center;}

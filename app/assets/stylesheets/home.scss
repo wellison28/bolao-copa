@@ -1,3 +1,23 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.home{
+  td{
+    text-align: center;
+  }
+
+  table{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 2px;
+  }
+
+  h2{
+    margin-bottom: 20px;
+  }
+
+  .header-table{
+    background-color: #90909063;
+  }
+}

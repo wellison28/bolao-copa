@@ -1,7 +1,14 @@
 class BetController < ApplicationController
 
   def index
-    @games = Game.where(round: 5)
+    @bets = [] # Bet.where(user: current_user)
+    games = Game.where(round: 5)
+    games.each do |game|
+      bet = game.bets.where(user: User.first).order(:created_at).last
+      if bet.present?
+        @bets.push(bet)
+      end
+    end
   end
 
   def new

@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+main{
+  width: 95%;
+  margin: 20px auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1cffbd;
+  padding: 10px;
+  margin-bottom: 15px;
+  a{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+input[type="submit"], a{
+  cursor: pointer;
+}

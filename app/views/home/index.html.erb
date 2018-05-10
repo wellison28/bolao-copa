@@ -1,4 +1,26 @@
-<h2>Hello <%= current_user.email %></h2>
+<%= render "shared/menu" %>
 
-<%= link_to('gravar', '/jogos') %>
-<%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+<main>
+  <h2>Olá, <%= current_user.name %></h2>
+
+  <table>
+    <tr class="header-table">
+      <th>Palpiteiro</th>
+      <th>Pontos</th>
+      <th>CB</th>
+      <th>VG</th>
+      <th>V</th>
+      <th>G</th>
+    </tr>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= 0 %></td>
+        <td><%= 0 %></td>
+        <td><%= 0 %></td>
+        <td><%= 0 %></td>
+        <td><%= 0 %></td>
+      </tr>
+    <% end %>
+  </table>
+</main>
