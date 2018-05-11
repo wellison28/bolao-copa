@@ -1,0 +1,19 @@
+body.sessions{
+  #new_user{
+    margin: 0 auto;
+  }
+
+  .field:nth-child(5) {
+    display: none;
+  }
+
+  h2{
+    margin-top: 15px;
+  }
+
+  form{
+      border: 1px solid gray;
+    padding: 25px;
+    border-radius: 3px;
+  }
+}

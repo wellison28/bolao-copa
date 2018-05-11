@@ -5,6 +5,7 @@
 
   <table>
     <tr class="header-table">
+      <th>#</th>
       <th>Palpiteiro</th>
       <th>Pontos</th>
       <th>CB</th>
@@ -12,8 +13,9 @@
       <th>V</th>
       <th>G</th>
     </tr>
-    <% @users.each do |user| %>
+    <% @users.each_with_index do |user, index| %>
       <tr>
+        <td><%= index + 1 %></td>
         <td><%= user.name %></td>
         <td><%= 0 %></td>
         <td><%= 0 %></td>

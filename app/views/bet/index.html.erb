@@ -1,14 +1,16 @@
 <%= render "shared/menu" %>
-<h2>Jogos da Rodada</h2>
+<main>
+<h2>Meus palpites</h2>
 
-<% @bets.each do |bet| %>
-  <div>
-    <%= bet.game.home %>
-    <%= bet.goal_home %>
-    <span>X</span>
-    <%= bet.goal_guest %>
-    <%= bet.game.guest %>
-  </div>
-<% end %>
-
-<%= link_to 'Palpitar', palpitar_path %>
+<table>
+  <% @bets.each do |bet| %>
+    <tr>
+      <td><%= bet.game.home %></td>
+      <td class="goals"><%= bet.goal_home %></td>
+      <td class="devisor">X</td>
+      <td class="goals"><%= bet.goal_guest %></td>
+      <td class="team-guest"><%= bet.game.guest %></td>
+    </tr>
+  <% end %>
+</table>
+</main>
