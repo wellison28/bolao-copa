@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('form').on('ajax:complete', function(xhr, status, data){
-    $(this).css('background-color', '#9ac59a');
+  $('input[type="submit"]').on('click', function(){
+    $(this).parents('form').css('background-color', '#9ac59a');
   })
 });
