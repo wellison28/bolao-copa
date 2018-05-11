@@ -1,0 +1,254 @@
+/* line 6, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet form {
+  max-width: 375px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+/* line 15, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet input[type="number"] {
+  height: 25px;
+  width: 25px;
+  text-align: center;
+}
+/* line 21, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet input[type="submit"] {
+  width: 55px;
+  height: 100%;
+}
+/* line 26, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 31, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet .container-forms {
+  width: 100%;
+}
+/* line 35, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet .line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 42, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet .btn-submit {
+  height: 100%;
+  margin-left: 10px;
+}
+/* line 44, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet .col1, body.bet .col2, body.bet .col3 {
+  width: 30%;
+  font-size: 0.8rem;
+}
+/* line 45, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet .col1 {
+  text-align: right;
+}
+/* line 46, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet .col3 {
+  text-align: left;
+}
+/* line 47, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet .col2 {
+  text-align: center;
+}
+/* line 49, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet tr {
+  margin-bottom: 10px;
+}
+/* line 50, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet td {
+  width: 20%;
+}
+/* line 51, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet .devisor {
+  text-align: center;
+}
+/* line 53, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet .team-guest {
+  text-align: right;
+}
+/* line 57, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet .goals {
+  text-align: center;
+  font-weight: bold;
+}
+/* line 62, /home/wellison/repositorios/bolao/app/assets/stylesheets/bet.scss */
+body.bet table {
+  margin: 0 auto;
+}
+/* line 1, /home/wellison/repositorios/bolao/app/assets/stylesheets/common.scss */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+}
+
+/* line 7, /home/wellison/repositorios/bolao/app/assets/stylesheets/common.scss */
+main {
+  width: 95%;
+  margin: 20px auto;
+}
+
+/* line 12, /home/wellison/repositorios/bolao/app/assets/stylesheets/common.scss */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1cffbd;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+/* line 18, /home/wellison/repositorios/bolao/app/assets/stylesheets/common.scss */
+header a {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* line 25, /home/wellison/repositorios/bolao/app/assets/stylesheets/common.scss */
+input[type="submit"], a {
+  cursor: pointer;
+}
+
+/* line 29, /home/wellison/repositorios/bolao/app/assets/stylesheets/common.scss */
+input:not([type="submit"]) {
+  font-size: 1.2rem;
+}
+
+/* line 33, /home/wellison/repositorios/bolao/app/assets/stylesheets/common.scss */
+input {
+  text-align: center;
+}
+
+/* line 37, /home/wellison/repositorios/bolao/app/assets/stylesheets/common.scss */
+body {
+  background-color: #00ffaa1f;
+}
+/* line 6, /home/wellison/repositorios/bolao/app/assets/stylesheets/home.scss */
+body.home td {
+  text-align: center;
+}
+/* line 10, /home/wellison/repositorios/bolao/app/assets/stylesheets/home.scss */
+body.home table {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+/* line 16, /home/wellison/repositorios/bolao/app/assets/stylesheets/home.scss */
+body.home h2 {
+  margin-bottom: 20px;
+}
+/* line 20, /home/wellison/repositorios/bolao/app/assets/stylesheets/home.scss */
+body.home .header-table {
+  background-color: #90909063;
+}
+/* line 24, /home/wellison/repositorios/bolao/app/assets/stylesheets/home.scss */
+body.home .instructions {
+  margin: 20px 0;
+}
+/* line 28, /home/wellison/repositorios/bolao/app/assets/stylesheets/home.scss */
+body.home h3, body.home h4 {
+  margin-bottom: 10px;
+}
+/* line 32, /home/wellison/repositorios/bolao/app/assets/stylesheets/home.scss */
+body.home .pages {
+  margin-bottom: 20px;
+}
+/* line 36, /home/wellison/repositorios/bolao/app/assets/stylesheets/home.scss */
+body.home .item {
+  margin-bottom: 10px;
+}
+/* line 39, /home/wellison/repositorios/bolao/app/assets/stylesheets/home.scss */
+body.home h5 {
+  font-size: 1rem;
+}
+/* line 43, /home/wellison/repositorios/bolao/app/assets/stylesheets/home.scss */
+body.home hr {
+  margin-top: 20px;
+}
+/* line 2, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/registrations/new.scss */
+body.registrations h2, body.sessions h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* line 7, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/registrations/new.scss */
+body.registrations form, body.sessions form {
+  width: 80%;
+}
+/* line 11, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/registrations/new.scss */
+body.registrations input, body.sessions input {
+  border-radius: 2px;
+  border: 1px solid #808080;
+  height: 25px;
+  width: 100%;
+}
+/* line 18, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/registrations/new.scss */
+body.registrations input[type="submit"], body.sessions input[type="submit"] {
+  width: 85px;
+  height: 30px;
+  margin: 15px 0;
+}
+/* line 24, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/registrations/new.scss */
+body.registrations .form-container, body.sessions .form-container {
+  display: flex;
+}
+/* line 27, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/registrations/new.scss */
+body.registrations .form-container form, body.sessions .form-container form {
+  margin: 0 auto;
+}
+/* line 31, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/registrations/new.scss */
+body.registrations .form-container em, body.sessions .form-container em {
+  font-size: 0.7rem;
+}
+/* line 36, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/registrations/new.scss */
+body.registrations .field, body.sessions .field {
+  margin-bottom: 10px;
+}
+/* line 40, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/registrations/new.scss */
+body.registrations label, body.sessions label {
+  font-weight: 700;
+}
+/* line 2, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/sessions/new.scss */
+body.sessions #new_user {
+  margin: 0 auto;
+}
+/* line 6, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/sessions/new.scss */
+body.sessions h2 {
+  margin-top: 15px;
+}
+/* line 10, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/sessions/new.scss */
+body.sessions form {
+  border: 1px solid gray;
+  padding: 25px;
+  border-radius: 3px;
+}
+/* line 16, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/sessions/new.scss */
+body.sessions .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 20, /home/wellison/repositorios/bolao/app/assets/stylesheets/users/sessions/new.scss */
+body.sessions .actions a {
+  color: black;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
