@@ -3,10 +3,6 @@ body.sessions{
     margin: 0 auto;
   }
 
-  .field:nth-child(5) {
-    display: none;
-  }
-
   h2{
     margin-top: 15px;
   }
@@ -15,5 +11,14 @@ body.sessions{
       border: 1px solid gray;
     padding: 25px;
     border-radius: 3px;
+  }
+
+  .actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+      color: black;
+    }
   }
 }

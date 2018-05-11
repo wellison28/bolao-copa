@@ -25,3 +25,11 @@ header{
 input[type="submit"], a{
   cursor: pointer;
 }
+
+input:not([type="submit"]){
+  font-size: 1.2rem;
+}
+
+input{
+  text-align: center;
+}
