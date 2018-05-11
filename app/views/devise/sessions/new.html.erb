@@ -1,5 +1,5 @@
-<h2>Log</h2>
-
+<div class="container-login">
+<div>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
@@ -17,5 +17,7 @@
     <%= link_to 'Me cadastrar >', new_user_registration_path %>
   </div>
 <% end %>
+</div>
+</div>
 
 
