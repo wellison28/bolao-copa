@@ -9,11 +9,13 @@
   <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off" %>
+    <% if flash[:alert] %>
+      <p><%= flash[:alert] %></p>
+    <% end %>
   </div>
 
   <div class="actions">
     <%= f.submit "Entrar" %>
-
     <%= link_to 'Me cadastrar >', new_user_registration_path %>
   </div>
 <% end %>
