@@ -9,7 +9,7 @@ end
 
 gem 'jquery-rails'
 #The authorization Gem for Ruby on Rails.
-gem 'cancancan', '~> 2.0'
+gem "cancan"
 #RailsAdmin is a Rails engine that provides an easy-to-use interface for managing your data
 gem 'rails_admin', '~> 1.3'
 #database postgres
