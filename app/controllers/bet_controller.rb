@@ -13,7 +13,7 @@ class BetController < ApplicationController
   end
 
   def new
-    game = Game.where(round: 5)
+    game = Game.where(round: 1)
     @games = []
     game.each {|g| @games.push(g.bets.build) }
   end

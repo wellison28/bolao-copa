@@ -1,6 +1,6 @@
 <%= render "shared/menu" %>
 <main>
-  <h2>Rodada 5</h2>
+  <h2>Rodada 1</h2>
   <div class="container-forms">
     <% @games.each_with_index do |game_bet, index| %>
       <%= form_for game_bet, url: {action: 'create'}, :html => {:class => "form-#{index}"}, remote: true do |f| %>
