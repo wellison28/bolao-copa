@@ -3,7 +3,7 @@ class BetController < ApplicationController
 
   def index
     @bets = [] # Bet.where(user: current_user)
-    games = Game.where(round: 5)
+    games = Game.where(round: 1)
     games.each do |game|
       bet = game.bets.where(user: current_user).order(:created_at).last
       if bet.present?
